@@ -1,8 +1,7 @@
-# AZNConverter
+# AZNConverter [![Gem Version](https://badge.fury.io/rb/azn_converter.svg)](https://badge.fury.io/rb/azn_converter) [![Build Status](https://travis-ci.org/0x2C6/azn-converter.svg?branch=master)](https://travis-ci.org/0x2C6/azn-converter)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/azn_converter`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Easy to use AZN converter.
+You can convert any currency to AZN and its word form.
 
 ## Installation
 
@@ -30,7 +29,7 @@ At below you see basic usage. By default it converts from USD
   5.to_azn #=> 8.5 with current currency
 ```
 
-You can specify currency yourself
+You can specify currency yourself if you doesn't have internet connection
 
 ```ruby
   5.to_azn(current: 0.78) #=> 3.900...
