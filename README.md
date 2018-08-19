@@ -51,7 +51,7 @@ Use `:sign` to add manat symbol to end of the returned value
 You can get word for of the conversion with `:words` option
 
 ```ruby
-  5.to_azn(sign: true) #=> "səkkiz manat əlli qəpik"
+  5.to_azn(words: true) #=> "səkkiz manat əlli qəpik"
 ```
 
 ## Contributing
