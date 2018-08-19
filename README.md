@@ -22,17 +22,41 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+At below you see basic usage. By default it converts from USD
 
-## Development
+```ruby
+  require 'azn_converter'
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+  5.to_azn #=> 8.5 with current currency
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+You can specify currency yourself
+
+```ruby
+  5.to_azn(current: 0.78) #=> 3.900...
+```
+
+By default we use to convert USD. It can be change by `:from` parameter
+
+```ruby
+  5.to_azn(from: :eur) #=> 9.68
+```
+
+Use `:sign` to add manat symbol to end of the returned value
+
+```ruby
+  5.to_azn(sign: true) #=> "8.5 ₼"
+```
+
+You can get word for of the conversion with `:words` option
+
+```ruby
+  5.to_azn(sign: true) #=> "səkkiz manat əlli qəpik"
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/azn_converter.
+Bug reports and pull requests are welcome on GitHub at https://github.com/0x2C6/azn-converter.
 
 ## License
 

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["farhad9801@gmail.com"]
 
   spec.summary       = %q{Convert currency to AZN}
-  spec.description   = %q{Convert any Integer to current or spesific currency}
+  spec.description   = %q{Convert any number to current or specific currency}
   spec.homepage      = "https://github.com/0x2C6/azn-converter"
   spec.license       = "MIT"
 
@@ -21,6 +21,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.required_ruby_version = '>= 2.0'
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
