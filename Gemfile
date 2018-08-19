@@ -3,4 +3,4 @@ source "https://rubygems.org"
 gemspec
 
 gem 'humanize', '~> 1.8'
-gem 'mechanize'
+gem 'nokogiri', '~> 1.8', '>= 1.8.4'
